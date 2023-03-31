@@ -1,0 +1,35 @@
+[
+    {
+        "PartnerKey": "",
+        "ID": 536001498,
+        "ObjectID": "",
+        "AccountType": "None",
+        "ParentID": 0,
+        "Name": "Copado Ltd (Partner Main*)",
+        "IsActive": 1,
+        "ParentName": "",
+        "Subscription": ""
+    },
+    {
+        "PartnerKey": "",
+        "ID": 536001605,
+        "ObjectID": "",
+        "AccountType": "None",
+        "ParentID": 536001498,
+        "Name": "Child Dev",
+        "IsActive": 1,
+        "ParentName": "Copado Ltd (Partner Main*)",
+        "Subscription": ""
+    },
+    {
+        "PartnerKey": "",
+        "ID": 536001606,
+        "ObjectID": "",
+        "AccountType": "None",
+        "ParentID": 536001498,
+        "Name": "Child Test",
+        "IsActive": 1,
+        "ParentName": "Copado Ltd (Partner Main*)",
+        "Subscription": ""
+    }
+]

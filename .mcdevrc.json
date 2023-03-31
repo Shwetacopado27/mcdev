@@ -1,0 +1,84 @@
+{
+    "credentials": {
+        "mcdevcopado": {
+            "eid": 536001498,
+            "businessUnits": {
+                "_ParentBU_": 536001498,
+                "Child_Dev": 536001605,
+                "Child_Test": 536001606
+            }
+        }
+    },
+    "options": {
+        "deployment": {
+            "commitHistory": 10,
+            "sourceTargetMapping": {
+                "deployment-source": "deployment-target"
+            },
+            "targetBranchBuMapping": {
+                "release/*": "MySandbox/QA-DE",
+                "master": ["MyProduction/PROD-DE", "MyProduction/PROD-NL"]
+            }
+        },
+        "documentType": "md",
+        "documentStandardRoles": false,
+        "exclude": {},
+        "include": {},
+        "serverTimeOffset": -6
+    },
+    "directories": {
+        "businessUnits": "businessUnits/",
+        "deploy": "deploy/",
+        "docs": "docs/",
+        "retrieve": "retrieve/",
+        "template": "template/",
+        "templateBuilds": ["retrieve/", "deploy/"]
+    },
+    "markets": {
+        "_ParentBU_": {
+            "suffix": "__ParentBU_"
+        },
+        "Child_Dev": {
+            "suffix": "_Child_Dev"
+        },
+        "Child_Test": {
+            "suffix": "_Child_Test"
+        }
+    },
+    "marketList": {
+        "deployment-source": {
+            "description": "Define one 1:1 BU-Market combo here to as source for automated creation of deployment packages; you can create more than one source market list",
+            "mcdevcopado/_ParentBU_": "_ParentBU_"
+        },
+        "deployment-target": {
+            "description": "Define n BU-Market combo here to as target for automated creation of deployment packages; you can create more than one target market list and they can be as complex as you like",
+            "mcdevcopado/Child_Dev": "Child_Dev",
+            "mcdevcopado/Child_Test": "Child_Test"
+        }
+    },
+    "metaDataTypes": {
+        "documentOnRetrieve": ["accountUser", "automation", "dataExtension", "role"],
+        "retrieve": [
+            "asset",
+            "automation",
+            "dataExtension",
+            "dataExtract",
+            "emailSendDefinition",
+            "eventDefinition",
+            "fileTransfer",
+            "ftpLocation",
+            "importFile",
+            "interaction",
+            "list",
+            "mobileCode",
+            "mobileKeyword",
+            "query",
+            "role",
+            "script",
+            "transactionalEmail",
+            "transactionalSMS",
+            "triggeredSendDefinition"
+        ]
+    },
+    "version": "4.3.4"
+}

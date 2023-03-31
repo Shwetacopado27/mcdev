@@ -1,0 +1,25 @@
+{
+  "name": "mcdev",
+  "scripts": {
+    "build": "sfmc-build all",
+    "build-cp": "sfmc-build cloudPages",
+    "build-email": "sfmc-build emails",
+    "eslint-check": "eslint"
+  },
+  "author": "Accenture",
+  "license": "UNLICENSED",
+  "description": "This project relies on **Accenture SFMC DevTools**!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "keywords": [],
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-ssjs": "^1.1.11",
+    "eslint-plugin-jsdoc": "^39.6.4",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "prettier-plugin-sql": "^0.12.1",
+    "sfmc-boilerplate": "^1.2.6"
+  }
+}
